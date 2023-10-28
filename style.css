@@ -1,0 +1,278 @@
+body{
+  margin: 0px;
+  padding: 0px;
+  background-color: rgba(172, 196, 237, 0.606);
+  font-size: 20px;
+  text-align: justify;
+}
+
+/* esto es del header */
+
+header{
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  
+}
+
+.container-nav {
+    display: flex;
+    padding: 10px;
+    height: 50px;
+    background-color: black;
+  }
+  
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+  
+  
+  .brand {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+  }
+  
+  
+  li>a {
+    padding: 8px 24px;
+  }
+  
+  
+  li {
+    list-style-type: none;
+  }
+  
+  
+  .navbar a {
+    color: rgb(255, 255, 255);
+    text-decoration:none;
+  }
+  
+  
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+  .button-menu-toggle {
+    display: none;
+  }
+  @media (max-width: 768px) {
+    .column {
+      flex: 100%;
+    }
+  
+  
+    .nav-links {
+      display: none;
+    }
+  
+  
+    .button-menu-toggle {
+      display: block;
+      background-color: white;
+      border:none;
+      border-radius: 50px;
+      padding: 0 24px;
+      font-family: monospace;
+      font-weight: bold;
+      font-size: 20px;
+    }
+   
+    .nav-links.nav-links-responsive {
+      position: absolute;
+      display: flex;
+      background-color: rgba(20,20,20,0.95);
+      width: 100%;
+      height: 100%;
+      top: 70px;
+      left: 0;
+      flex-direction: column;
+      padding-top: 200px;
+      align-items: center;
+      gap:70px;
+      font-size: 40px;
+  
+  
+    }
+  }
+ /* hasta aca vienen las etiquetas del header */
+
+ main {
+  margin-top: 70px;
+  height: 800px;
+ }
+
+ #contenedor{
+  display: flex;
+  text-align: center;
+  align-items: normal;
+ 
+ }
+
+ .titulo{
+  text-align: center;
+  margin-top: 80px;
+ }
+
+
+ p{
+  text-align: center;
+  padding: 10px;
+  
+ }
+ .img-perfil{
+ 
+  max-width: 85%; /* Asegura que la imagen no sea más ancha que el contenedor */
+  overflow: auto;
+  border-radius: 10%;
+ 
+
+ }
+ #habilidades li{
+  list-style-type: none;
+  margin: 15px 0;
+  color: rgb(86, 83, 83);
+}
+ #contenedor > *{
+  border: 1px solid #000;
+  border-radius: 15px;
+  margin: 5px;
+  padding-top: 40px;
+ }
+.sidebar{
+  width: 20%;
+  
+ 
+  
+}
+.contenido{
+  width: 60%;
+  padding: 0px 10px;
+ 
+}
+#div-proyectos{
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  box-sizing: border-box;
+}
+#div-proyectos > div{
+    
+    width: 45%;
+  height: 260px; /* Cambia la altura según tus necesidades */
+  box-sizing: border-box;
+  padding: 0 ;
+  margin: 10px 0px;
+  justify-content: center;
+  box-sizing: border-box;
+    overflow: hidden;
+    transition: 1.2s;
+}
+#div-proyectos img{
+  
+  
+  align-items: center;
+  width: 75%;
+  height: 150px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.habilidades-div {
+  padding: 30px;
+  display: flex;
+  justify-content: space-around;
+}
+
+#div-proyectos > div:hover{
+  transform: scale(1.2);
+  border-radius: 18px;
+  height: 350px;
+  transform: scale(1.1);
+  box-shadow: 10px 0 10px rgba(111, 16, 16, 0.5);
+}
+
+
+
+.sidebar2{
+  width:20%;
+ 
+  padding: 5px;
+  word-wrap: break-word;
+}
+
+aside{
+  /* 
+      Posicionamos el aside a la derecha (fijo)
+  */
+  position: fixed;
+  top: 700px;
+  right: 5px;
+}
+
+aside ul{
+  list-style: none;    
+}
+aside ul li a{
+  /* 
+      Cambiamos el color de los iconos
+  */
+  color: rgb(38, 53, 38);    
+}
+
+aside ul li a i{
+  /* 
+      Agrandamos los iconos
+  */
+  font-size: 2rem;
+  padding: 8px ;
+}
+
+
+
+
+.bloque a{
+
+  text-decoration: none;
+  
+ 
+ 
+  background-color: #b8bec4;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
+
+
+}
+
+.bloque a:hover{
+  color: #b8bec4;
+  
+
+}
+
+
+
+  /* contacto !!!!!!   */
+
+.h1-contacto{
+  text-align: center;
+}
+.div-contacto{
+ 
+  padding: 25%;
+}
+
+
+
